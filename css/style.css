@@ -19,6 +19,8 @@ body {
   font-weight: 400;
   line-height: 20px;
   font-family: 'Open Sans', sans-serif;
+  /* min-width: 320px; */
+  overflow-x: hidden;
 }
 
 .header__up-box {
@@ -50,6 +52,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  transition: all .3s;
+}
+
+.header__menu {
+  overflow: auto;
 }
 
 .header__list li {
@@ -123,6 +130,7 @@ body {
 .stylish__btn {
   padding: 12px 35px;
   border: 2px solid #fff;
+  transition: all .3s;
 }
 
 .header__item-text {
@@ -175,6 +183,7 @@ body {
   width: 100%;
   border: none;
   cursor: pointer;
+  transition: all .3s;
 }
 
 .header-bottom {
@@ -221,6 +230,7 @@ body {
 .header-bottom__link i {
   font-size: 40px;
   color: #ccc;
+  transition: all .3s;
 }
 
 .about {
@@ -321,6 +331,7 @@ body {
   background: #FF8B38;
   border-radius: 5px;
   padding: 15px 30px;
+  transition: all .3s;
 }
 
 .sublist {
@@ -509,6 +520,7 @@ body {
 .pricing__item {
   width: 343px;
   text-align: center;
+  transition: all .3s;
 }
 
 .pricing__item:first-child .pricing__item-top{
@@ -730,6 +742,14 @@ body {
   padding: 16px 33px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all .3s;
+}
+
+.about__bg img,
+.sublist__item img,
+.standart__img img
+{
+  transition: all .3s;
 }
 
 .contact-form-btn-wrapper {

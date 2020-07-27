@@ -205,6 +205,49 @@
   }
 }
 
+@media (max-width: 992px) {
+  .wow{
+    animation-name: none !important;
+    visibility: visible !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__item-link:hover {
+    color: #FF8C35;
+  }
+
+  .header__btn:hover,
+  .stylish__btn:hover
+  {
+    border: 2px solid #FF8C35;
+    color: #FF8C35;
+  }
+
+  .header-bottom__link:hover i {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .header-form__btn:hover,
+  .about__tabs-btn:hover,
+  .contact-form__btn:hover
+  {
+    background:#EF7C25;
+  }
+
+  .about__bg:hover img,
+  .sublist__item:hover img,
+  .standart__img:hover img
+  {
+    transform: scale(1.1);
+  }
+
+  .pricing__item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+}
+
 @media (max-width: 965px) {
   .header__inner {
     display: block;
@@ -329,9 +372,10 @@
     display: none;
     position: fixed;
     left: 0;
+    bottom: 0;
     right: 0;
     top: 72px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     transition: transform .3s;
   }
 
@@ -362,10 +406,30 @@
     display: block;
     width: 30px;
     height: 30px;
+    position: relative;
     z-index: 1;
   }
 
+  .burger.burger-active span:first-child {
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 10px;
+  }
+
+  .burger.burger-active span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+  }
+
+  .burger.burger-active span:last-child {
+    position: absolute;
+    top: 20px;
+    transform: scale(0);
+  }
+
   .burger span {
+    transition: all .3s;
     display: block;
     width: 30px;
     height: 4px;
@@ -417,6 +481,7 @@
     margin-left: 0;
     text-align: center;
   }
+
   .about {
     padding-top: 40px;
   }
